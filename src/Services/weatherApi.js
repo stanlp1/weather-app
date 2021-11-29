@@ -16,7 +16,7 @@ const getWeatherFromCoord = async (lat, lon) => {
     let url = new URL("https://api.openweathermap.org/data/2.5/onecall");
     url.searchParams.append("lat", lat);
     url.searchParams.append("lon", lon);
-    url.searchParams.append("exclude", "minutely,hourly");
+    url.searchParams.append("exclude", "hourly");
     url.searchParams.append("appid", API_KEY);
 
     const response = await fetch(url);
