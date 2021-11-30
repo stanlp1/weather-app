@@ -18,15 +18,6 @@ let Weather = () => {
                 });
     }, [city]);
 
-    let searchCity = () => {
-        getLatLon(city)
-        .then( (jsonResponse) => {
-            setCurentCity(jsonResponse.name);
-            getWeatherFromCoord(jsonResponse.coord.lat, jsonResponse.coord.lon).then( (weatherData) =>{
-                setSelectedWeather(weatherData.current);
-                setWeather(weatherData);});
-        });
-    }
     return (
         <div className={Styles['app-container']}>
             <input onKeyDown={(e) => {
@@ -36,7 +27,7 @@ let Weather = () => {
                     e.preventDefault();
                     setCity(e.target.value);
                 }
-            }} onSubmit={searchCity} placeholder="Search City" className={Styles['city-input']} />
+            }} placeholder="Search City" className={Styles['city-input']} />
             {weather && 
             <div className={Styles['weather-header']}>
                 <div className={Styles['weather-header-temp']}>
