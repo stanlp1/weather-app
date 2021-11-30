@@ -28,6 +28,9 @@
 
 .card-icon {
     object-fit: contain;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 900px) {
