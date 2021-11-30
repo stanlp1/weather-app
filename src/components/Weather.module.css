@@ -79,14 +79,13 @@
         text-align: center;
     }
 
-
-
     .city-input {
         align-self: center;
     }
 
     .app-container {
         padding: 1em;
+        gap: 1.5em;
     }
 
     .current-weather-temp {

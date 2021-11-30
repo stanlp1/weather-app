@@ -29,3 +29,10 @@
 .card-icon {
     object-fit: contain;
 }
+
+@media screen and (max-width: 900px) {
+
+    .card-day-heading {
+        font-size: 1.5em;
+    }
+}
