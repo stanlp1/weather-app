@@ -1,0 +1,65 @@
+.weather-header {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0,  0.4);
+    padding: 3em;
+    border-radius: 1em;
+}
+
+.weather-header-temp {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.weather-header-info {
+    text-align: right;
+}
+.current-weather-temp {
+    font-size: 6rem;
+}
+
+.current-city {
+    font-size: 3rem;
+}
+
+.current-day {
+    font-size: 2rem;
+}
+
+.current-weather-description {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    
+}
+.card-container {
+    display:flex;
+    flex-direction: row;
+    gap: calc(100% / 8 / 8);
+    overflow-x: auto;
+}
+
+.city-input {
+    max-width: 15em;
+    align-self: flex-end;
+    border: none;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 1.5rem;
+    color: white;
+    text-align:right;
+}
+
+.app-container {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('https://bscottnz.github.io/weather-app/imgs/bg.045edac4468e3ab87a833664e263f543.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}

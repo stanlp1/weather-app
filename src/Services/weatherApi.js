@@ -9,7 +9,8 @@ const getLatLon = async (city) => {
 
     const response = await fetch(url);
     const jsonResponse = await response.json();
-    return [jsonResponse.coord.lon, jsonResponse.coord.lat];
+    console.log(jsonResponse);
+    return jsonResponse;
 }
 
 const getWeatherFromCoord = async (lat, lon) => {

@@ -1,0 +1,31 @@
+.card-container {
+    width: calc(100% / 8);
+    min-width: 100px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 1em;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .5s background-color;
+    padding: .5em;
+}
+
+.card-day-heading {
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-temp-footer {
+    text-align: center;
+}
+
+.card-temp-footer > h3,h5 {
+    margin: 0 0 .5em 0;
+}
+.card-selected {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card-icon {
+    object-fit: contain;
+}
