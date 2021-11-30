@@ -9,7 +9,7 @@ let WeatherDayCard = ({selected, setSelected, dayWeather}) => {
     return (
         <div onClick={ () => setSelected(dayWeather)} className={`${Styles['card-container']} ${selected && Styles['card-selected']}`}>
             <span className={Styles['card-day-heading']}>{day}</span>
-            <img className={Styles['card-icon']} alt={dayWeather.weather[0].description} src={`http://openweathermap.org/img/wn/${dayWeather.weather[0].icon}@4x.png`} />
+            <img className={Styles['card-icon']} alt={dayWeather.weather[0].description} src={`https://openweathermap.org/img/wn/${dayWeather.weather[0].icon}@4x.png`} />
             <div className={Styles['card-temp-footer']}>
                 <h3>{Math.round(dayWeather.temp.max)}°</h3>
                 <h5>{Math.round(dayWeather.temp.min)}°</h5>
