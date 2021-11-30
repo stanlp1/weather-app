@@ -44,22 +44,58 @@
     max-width: 15em;
     align-self: flex-end;
     border: none;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 1em;
+    padding: 0.2em;
     font-size: 1.5rem;
     color: white;
     text-align:right;
+    background-image: url(https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .app-container {
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
     padding: 5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 3em;
     background-image: url('https://bscottnz.github.io/weather-app/imgs/bg.045edac4468e3ab87a833664e263f543.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .weather-header {
+        flex-direction: column;
+        padding: 1.5em;
+    }
+    .weather-header-info {
+        text-align: center;
+    }
+
+
+
+    .city-input {
+        align-self: center;
+    }
+
+    .app-container {
+        padding: 1em;
+    }
+
+    .current-weather-temp {
+        font-size: 3em;
+    }
+    .current-city, .current-day {
+        font-size: 1.3em;
+    }
+    .current-weather-description {
+        font-size: 1em;
+    }
 }
