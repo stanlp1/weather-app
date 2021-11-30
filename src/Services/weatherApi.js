@@ -5,7 +5,7 @@ const getLatLon = async (city) => {
     let url = new URL("https://api.openweathermap.org/data/2.5/weather");
     url.searchParams.append("q", city);
     url.searchParams.append("appid", API_KEY);
-    url.searchParams.append("units", "metric");
+    url.searchParams.append("units", "imperial");
 
     const response = await fetch(url);
     const jsonResponse = await response.json();
@@ -18,6 +18,7 @@ const getWeatherFromCoord = async (lat, lon) => {
     url.searchParams.append("lon", lon);
     url.searchParams.append("exclude", "minutely");
     url.searchParams.append("appid", API_KEY);
+    url.searchParams.append("units", "imperial");
 
     const response = await fetch(url);
     const jsonResponse = await response.json();
